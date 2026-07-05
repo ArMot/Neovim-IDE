@@ -1,5 +1,5 @@
 local function has_words_before()
-  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+  local _, col = unpack(vim.api.nvim_win_get_cursor(0))
   if col == 0 then
     return false
   end
@@ -47,18 +47,15 @@ return {
     mode = "i",
   },
 
+  ----------------------------------------------------------
+  -- AI (explicit only)
+  ----------------------------------------------------------
+
   {
-
-    ----------------------------------------------------------
-    -- AI (explicit only)
-    ----------------------------------------------------------
-
-    {
-      "<A-y>",
-      function()
-        require("minuet").make_blink_map()()
-      end,
-      mode = "i",
-    },
+    "<A-y>",
+    function()
+      require("minuet").make_blink_map()()
+    end,
+    mode = "i",
   },
 }

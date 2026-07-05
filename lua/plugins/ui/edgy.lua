@@ -40,16 +40,12 @@ return {
         title = "Symbols",
         size = { height = 4 },
         pinned = true,
-
-        ------------------------------------------------------
-        -- AVANTE INTEGRATION (IMPORTANT)
-        ------------------------------------------------------
-        {
-          ft = { "Avante", "AvanteInput", "AvanteSelectedFiles", "AvanteDiff" },
-          title = "AI Assistant",
-          size = { width = 45 },
-          pinned = true,
-        },
+      },
+      {
+        ft = { "Avante", "AvanteInput", "AvanteSelectedFiles", "AvanteDiff" },
+        title = "AI Assistant",
+        size = { width = 45 },
+        pinned = true,
       },
     },
   },
